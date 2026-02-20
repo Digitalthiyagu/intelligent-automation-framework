@@ -4,45 +4,63 @@
 
 The Intelligent Automation Framework is a Python-based automation project designed to simulate real-world QA and production-support workflows.
 
-This framework demonstrates how automation can be applied to:
+In real production and QA environments, engineers frequently deal with:
 
-- API validation and response monitoring
-- System health diagnostics
-- Log file analysis and error detection
-- Modular and reusable automation design
+- API failures and slow responses
+- System resource bottlenecks
+- Hidden application errors inside logs
+- Repetitive manual diagnostic tasks
 
-The project reflects practical automation scenarios commonly encountered in QA, DevOps, and IT environments.
+This framework was designed to automate these diagnostic and validation activities in a structured, reusable manner.
 
 ---
 
 ## Key Features
 
 ### API Validation Engine
-- Sends HTTP requests to APIs
+- Sends HTTP requests to target endpoints
 - Validates response status codes
-- Measures response times
+- Captures response time metrics
 
 ### System Health Monitoring
-- Captures CPU, memory, and disk utilization
-- Useful for performance diagnostics and alerting
+- Tracks CPU, memory, and disk utilization
+- Useful for performance diagnostics
 
 ### Log File Analyzer
-- Scans log files for critical failures
-- Detects ERROR / FAIL / CRITICAL events
-- Gracefully handles missing log scenarios
+- Scans logs for ERROR / FAIL / CRITICAL events
+- Handles missing log scenarios gracefully
 
-### Modular Framework Design
-- Clean separation of responsibilities
-- Easily extensible and maintainable
+### Modular Design
+- Clear separation of responsibilities
+- Easily extensible components
 
 ---
 
-## Technologies Used
+## Technology Stack
 
 - Python
-- Requests (HTTP client)
+- Requests (API interactions)
 - Psutil (System monitoring)
 
 ---
 
-## Project Structure
+## Example Use Cases
+
+This framework simulates automation tasks such as:
+
+- Monitoring API availability and latency
+- Diagnosing system resource anomalies
+- Identifying failures from application logs
+- Supporting QA / Production troubleshooting workflows
+
+---
+
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+## Sample Execution
+![Framework Execution](assets/frame-output.png)
