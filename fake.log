@@ -1,0 +1,4 @@
+INFO Application started
+ERROR Database connection failed
+INFO Retrying connection
+FAIL Timeout occurred
